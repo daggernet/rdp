@@ -1,5 +1,5 @@
 # RDP_COFFIN
-FREE RDP WINDOWS SERVER 2019
+
 > **2CPU & 7GB RAM**
 
 > ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
