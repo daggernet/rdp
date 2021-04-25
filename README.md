@@ -2,7 +2,7 @@
 FREE RDP WINDOWS SERVER 2019
 > **2CPU & 7GB RAM**
 
-> ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+> ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
 
 ## PLEASE DON'T MINING CRYPTO AGAIN
 * Click Fork in the right corner of the screen to save it to your Github.
