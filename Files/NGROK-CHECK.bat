@@ -12,8 +12,8 @@ echo Pass: x@K4PBb3g0QI9#
 curl -O https://raw.githubusercontent.com/c9ffin/rdp/main/Files/DisablePasswordComplexity.ps1 > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://raw.githubusercontent.com/c9ffin/rdp/main/Files/FastConfigVPS_v5.1.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://raw.githubusercontent.com/c9ffin/rdp/main/Files/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/MuHammadYousry/c9ffin/rdp/Everything.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/MuHammadYousry/c9ffin/rdp/BANDIZIP-SETUP.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\Everything.exe" https://raw.githubusercontent.com/c9ffin/rdp/main/Files/Everything.exe > out.txt 2>&1
+curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://raw.githubusercontent.com/c9ffin/rdp/main/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
