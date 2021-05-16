@@ -4,7 +4,7 @@
 
 > ## [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://github.com/c9ffin/RDP_COFFIN/blob/main/.github/workflows/coffin.yml)
 
-## PLEASE DON'T MINING CRYPTO AGAIN
+## You are not allowed to modify the project
 * Click Fork in the right corner of the screen to save it to your Github.
 * Visit https://dashboard.ngrok.com to get **NGROK_AUTH_TOKEN**
 * In Github go to ⚙ Settings> Secrets> New repository secret
@@ -15,3 +15,5 @@
 * Reload the page and press RDP_COFFIN> build
 * Press the down arrow on Connect To Your RPD to get IP, User, Password.
 > If you have any questions, contact me in Discord: **vv#0999**
+## Original Repositor :
+> https://github.com/c9ffin/rdp
