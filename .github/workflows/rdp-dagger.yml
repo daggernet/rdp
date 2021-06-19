@@ -1,4 +1,4 @@
-name: RDP-DAGGER
+name: DAGGER-RDP
 
 on: workflow_dispatch
 
