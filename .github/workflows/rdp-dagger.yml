@@ -1,4 +1,4 @@
-name: RDP_COFFIN
+name: RDP-DAGGER
 
 on: workflow_dispatch
 
