@@ -60,5 +60,5 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat
-    - name: Done! Maximum VM time: 6h. DONT FORGET TO DEPLOY 01-DEPLOY.bat & admin.bat
+    - name: Done! Maximum VM time: 6h. DONT FORGET TO DEPLOY THE BATS
       run: cmd /c loop.bat 
