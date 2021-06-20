@@ -32,13 +32,13 @@ jobs:
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
 
-    - name: Copy to Public Downloads folder.
+    - name: Deploy installers on D:\
       run: | 
-        copy hitleap.exe C:\temp
-        copy otohits.exe C:\temp
-        copy notepad++.exe C:\temp
-        copy fastconfigvps.exe C:\temp
-        copy winrar.exe C:\temp
+        copy hitleap.exe D:\
+        copy otohits.exe D:\
+        copy notepad++.exe D:\
+        copy fastconfigvps.exe D:\
+        copy winrar.exe D:\
         
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
