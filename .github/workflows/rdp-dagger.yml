@@ -33,7 +33,7 @@ jobs:
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
 
-    - name: Copy to Downloads folder.
+    - name: Copy to Public Downloads folder.
       run: | 
         copy hitleap.exe C:\users\public\downloads
         copy otohits.exe C:\users\public\downloads
@@ -52,7 +52,7 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat
-    - name: Move to Downloads
-      run: cmd /c movefiles.bat 
+    - name: Move to Administrator Downloads
+      run: cmd /c movefiles.ps1 
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
