@@ -26,11 +26,14 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-SA.bat -OutFile NGROK-SA.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/wallpaper.bat -OutFile wallpaper.bat
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/purplewallpaper.jpg -OutFile wallpaper.jpg
+
 
     - name: Deploy installers on D:\
       run: | 
