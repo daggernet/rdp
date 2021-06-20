@@ -32,7 +32,7 @@ jobs:
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/purplewallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/purplewallpaper.jpg -OutFile wallpaper.bmp
 
 
     - name: Deploy installers on D:\
@@ -42,7 +42,7 @@ jobs:
         copy notepad++.exe D:\
         copy fastconfigvps.exe D:\
         copy winrar.exe D:\
-        copy wallpaper.jpg D:\
+        copy wallpaper.bmp D:\
         copy runasadmin.bat D:\
         
         
