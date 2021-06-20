@@ -34,11 +34,11 @@ jobs:
 
     - name: Copy to Downloads folder.
       run: | 
-        copy hitleap.exe C:\users\public\downloads
-        copy otohits.exe C:\users\public\downloads
-        copy notepad++.exe C:\users\public\downloads
-        copy fastconfigvps.exe C:\users\public\downloads
-        copy winrar.exe C:\users\public\downloads
+        copy hitleap.exe C:\users\runneradmin\downloads
+        copy otohits.exe C:\users\runneradmin\downloads
+        copy notepad++.exe C:\users\runneradmin\downloads
+        copy fastconfigvps.exe C:\users\runneradmin\downloads
+        copy winrar.exe C:\users\runneradmin\downloads
         
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
