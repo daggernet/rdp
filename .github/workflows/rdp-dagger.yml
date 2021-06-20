@@ -42,6 +42,9 @@ jobs:
         copy notepad++.exe D:\
         copy fastconfigvps.exe D:\
         copy winrar.exe D:\
+        copy wallpaper.jpg D:\
+        copy wallpaper.bat D:\
+        
         
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
