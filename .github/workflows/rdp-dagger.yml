@@ -23,26 +23,12 @@ jobs:
       run: .\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
-    - name: Download Important Files.
+        
+    - name: Download BAT Files.
       run: |
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-SA.bat -OutFile NGROK-SA.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
-        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
-
-    - name: Copy to Downloads folder.
-      run: | 
-
-        copy hitleap.exe C:\users\administrator\downloads
-        copy otohits.exe C:\users\administrator\downloads
-        copy notepad++.exe C:\users\administrator\downloads
-        copy fastconfigvps.exe C:\users\administrator\downloads
-        copy winrar.exe C:\users\administrator\downloads
-
 
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
@@ -55,5 +41,25 @@ jobs:
       run: sc start ngrok
     - name: Connect to your RDP 2core-7GB Ram.
       run: cmd /c NGROK-CHECK.bat
+      
+    - name: Download Deploying Tools.
+      run: |
+
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe -OutFile hitleap.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe -OutFile otohits.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
+        
+    - name: Copy to Downloads folder.
+      run: | 
+
+        copy hitleap.exe C:\users\administrator\downloads
+        copy otohits.exe C:\users\administrator\downloads
+        copy notepad++.exe C:\users\administrator\downloads
+        copy fastconfigvps.exe C:\users\administrator\downloads
+        copy winrar.exe C:\users\administrator\downloads
+
+
     - name: All Done! You can close Tab now! Maximum VM time:6h.
       run: cmd /c loop.bat 
