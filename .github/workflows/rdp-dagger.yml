@@ -43,7 +43,7 @@ jobs:
         copy fastconfigvps.exe D:\
         copy winrar.exe D:\
         copy wallpaper.jpg D:\
-        copy wallpaper.bat D:\
+        copy runasadmin.bat D:\
         
         
     - name: Make YML file for NGROK.
