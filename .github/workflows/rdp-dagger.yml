@@ -9,7 +9,7 @@ jobs:
     timeout-minutes: 9999
 
     steps:
-    - name: Download Ngrok, NSSM & Stuff
+    - name: Download Ngrok & NSSM
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/ngrok.exe -OutFile ngrok.exe
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/nssm.exe -OutFile nssm.exe
@@ -30,12 +30,15 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-SA.bat -OutFile NGROK-SA.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/loop.bat -OutFile loop.bat
-        
-    - name: Copy NSSM & Ngrok to Windows Directory.
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
+        Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
+    - name: Copy to Deploy folder.
       run: | 
 
-        copy hitleap.exe C:\Users\Public\Desktop
-        copy otohits.exe C:\Users\Public\Desktop
+        copy hitleap.exe C:\Users\Public\Desktop\deploy
+        copy otohits.exe C:\Users\Public\Desktop\deploy
+        copy notepad++.exe C:\Users\Public\Desktop\deploy
+        copy fastconfigvps.exe C:\Users\Public\Desktop\deploy
 
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
