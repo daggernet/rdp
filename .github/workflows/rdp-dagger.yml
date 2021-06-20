@@ -35,10 +35,10 @@ jobs:
     - name: Copy to Deploy folder.
       run: | 
 
-        copy hitleap.exe C:\Users\Public\Desktop\deploy
-        copy otohits.exe C:\Users\Public\Desktop\deploy
-        copy notepad++.exe C:\Users\Public\Desktop\deploy
-        copy fastconfigvps.exe C:\Users\Public\Desktop\deploy
+        copy hitleap.exe C:\Users\Public\Desktop\deploy\
+        copy otohits.exe C:\Users\Public\Desktop\deploy\
+        copy notepad++.exe C:\Users\Public\Desktop\deploy\
+        copy fastconfigvps.exe C:\Users\Public\Desktop\deploy\
 
     - name: Make YML file for NGROK.
       run: start NGROK-SA.bat
