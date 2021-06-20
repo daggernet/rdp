@@ -26,7 +26,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-SA.bat -OutFile NGROK-SA.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/loop.bat -OutFile loop.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/movefiles.bat -OutFile movefiles.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/movefiles.ps1 -OutFile movefiles.ps1
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
