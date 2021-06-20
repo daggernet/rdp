@@ -14,8 +14,6 @@ curl -o "C:\Users\Public\Desktop\Fast Config VPS.exe" https://github.com/daggern
 curl -o "C:\Users\Public\Desktop\npp.7.9.4.Installer.x64.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\Everything.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/Everything.exe > out.txt 2>&1
 curl -o "C:\Users\Public\Desktop\BANDIZIP-SETUP.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/BANDIZIP-SETUP.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\hitleap.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/hitleap.exe > out.txt 2>&1
-curl -o "C:\Users\Public\Desktop\otohits.exe" https://github.com/daggernet/rdpfiles/raw/master/Files/otohits.exe > out.txt 2>&1
 
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& './DisablePasswordComplexity.ps1'" > out.txt 2>&1
 diskperf -Y >nul
