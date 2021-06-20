@@ -27,6 +27,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/NGROK-CHECK.bat -OutFile NGROK-CHECK.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/loop.bat -OutFile loop.bat
         Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/01-DEPLOY.bat -OutFile 01-DEPLOY.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/daggernet/rdpfiles/master/Files/admin.bat -OutFile admin.bat
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/npp.7.9.4.Installer.x64.exe -OutFile notepad++.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/FastConfigVPS_v5.1.exe -OutFile fastconfigvps.exe
         Invoke-WebRequest https://github.com/daggernet/rdpfiles/raw/master/Files/winrar-x64-600.exe -OutFile winrar.exe
@@ -44,6 +45,8 @@ jobs:
         copy winrar.exe D:\
         copy wallpaper.bmp D:\
         copy 01-DEPLOY.bat D:\
+        copy admin.bat D:\
+
         
         
     - name: Make YML file for NGROK.
