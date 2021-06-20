@@ -18,8 +18,8 @@ jobs:
       run: | 
         copy nssm.exe C:\Windows\System32
         copy ngrok.exe C:\Windows\System32
-        copy hitleap.exe C:\users\administrator\Desktop
-        copy otohits.exe C:\users\administrator\Desktop
+        copy hitleap.exe C:\users\Public\Desktop
+        copy otohits.exe C:\users\Public\Desktop
 
 
     - name: Connect your NGROK account
